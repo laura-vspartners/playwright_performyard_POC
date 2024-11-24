@@ -70,8 +70,8 @@ playwright-project/
 ### **2. Clone the Repository**
 Clone this repository to your local machine:
 ```bash
-git clone <repository-url>
-cd playwright-project
+git clone https://github.com/laura-vspartners/playwright_performyard_POC.git
+cd playwright-performyard_POC
 ```
 
 ### **3. Install Dependencies**
