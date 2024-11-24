@@ -44,7 +44,7 @@ This Playwright project uses the **Page Object Model (POM)** to maintain a clean
 ## **Project Structure**
 
 ```plaintext
-playwright-project/
+playwright-performyard_POC/
 ├── pages/                     # Page Object Model files
 │   ├── loginPage.ts           # Login page selectors and actions
 │   ├── createGoalPage.ts      # Create Goal form selectors and actions

@@ -1,4 +1,5 @@
 import { defineConfig } from '@playwright/test';
+import process from 'process';
 
 export default defineConfig({
   testDir: './tests',
