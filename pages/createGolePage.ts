@@ -75,7 +75,7 @@ export class GoalPage {
     await this.page.locator('role=option', { name: employeeName }).click();
   }
 
-  // Clicks the create goal button
+  // Submits the goal form
   async submitNewGoal() {
     await this.submitGoal.click();
   }
@@ -86,7 +86,7 @@ export class GoalPage {
     await expect(successMessage).toBeVisible();
   }
 
-  // Verifies if an error message is displayed
+  // Verifies target defualt value is 100
   async verifyTargetDefaultValue() {
     await this.createGoalButton.click();
     const targetValue = await this.targetInput.inputValue();
@@ -95,6 +95,7 @@ export class GoalPage {
     }
   }
   
+   // Verifies if an error message is displayed
   async verifyMessageErrorIsDisplayed(expectedError: string) {
     const errorLocator = this.page.locator('[role="alert"]');
     await expect(errorLocator).toHaveText(expectedError);
