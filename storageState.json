@@ -1,0 +1,115 @@
+{
+  "cookies": [
+    {
+      "name": "google-oauth-url",
+      "value": "\"https%3A//accounts.google.com/o/oauth2/auth%3Fresponse_type%3Dcode%26client_id%3D886378790895.apps.googleusercontent.com%26redirect_uri%3Dhttps%253A%252F%252Fstaging.talent.performyard.com%252Flogin%252Fgoogle-oauth%26scope%3Dopenid%2Bemail%26prompt%3Dselect_account\"",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "office365-oauth-url",
+      "value": "\"https%3A//login.microsoftonline.com/common/oauth2/v2.0/authorize%3Fresponse_type%3Dcode%26client_id%3De2f47cb3-438f-401a-9342-91a4eb46953e%26redirect_uri%3Dhttps%253A%252F%252Fstaging.talent.performyard.com%252Flogin%252Fmicrosoft-oauth%26scope%3Dopenid%2Bemail%2Bprofile%26response_mode%3Dquery\"",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "authorization",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc0MGY0NjU2YjlhODE3MDBiMWU1ODczIiwiY29tcGFueV9pZCI6IjY3NDBmNDY1NmI5YTgxNzAwYjFlNTg3NyIsInVzZXJfcHJpbWFyeV9yb2xlIjoiYmlsbGluZy1hZG1pbiJ9.GL4rLW0EUN-cjZJ1LbNl-mpERaeWZH57pv1B0ionbes",
+      "domain": ".staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "py-expires",
+      "value": "43200",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "authenticatedUser",
+      "value": "{%22id%22:%226740f4656b9a81700b1e5873%22%2C%22name%22:%22Jenny%20Sherman%22%2C%22permissionRole%22:%22billingAdmin%22%2C%22email%22:%22laura.andreescu@vspartners.us%22%2C%22managerID%22:%226740f4656b9a81700b1e5870%22%2C%22groupID%22:%226740f4656b9a81700b1e592d%22}",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "authorization-staging",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc0MGY0NjU2YjlhODE3MDBiMWU1ODczIiwiY29tcGFueV9pZCI6IjY3NDBmNDY1NmI5YTgxNzAwYjFlNTg3NyIsInVzZXJfcHJpbWFyeV9yb2xlIjoiYmlsbGluZy1hZG1pbiJ9.GL4rLW0EUN-cjZJ1LbNl-mpERaeWZH57pv1B0ionbes",
+      "domain": ".staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_xsrf",
+      "value": "2|a2809c54|159fff856fef453528d88012d5d16db5|1732547986",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": 1735139986.641043,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_tz",
+      "value": "Europe/Bucharest",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "previous_session_id",
+      "value": "2|1:0|10:1732547987|19:previous_session_id|32:Njc0NDk1OTE3ZGUxMWQ5MTZhMzk3NzQz|186434a63f4e85516944c7fb681fc197925d8ad46e1ff1144acccb065929202d",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": 1764083987.442494,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth",
+      "value": "\"2|1:0|10:1732547987|4:auth|276:eyJfaWQiOiB7IiRvaWQiOiAiNjc0MGY0NjU2YjlhODE3MDBiMWU1ODczIn0sICJleHBpcmVzIjogMTczMjU5MTE4Ny4zNzMyNzY1LCAic2Vzc2lvbl9pZCI6ICI2NzQ0OTU5MTdkZTExZDkxNmEzOTc3NDMiLCAibWZhX2xvZ2luX3Bhc3NlZCI6IGZhbHNlLCAiZW1haWxfcGFzc3dvcmRfYXV0aGVudGljYXRlZCI6IHRydWUsICJtZmFfZW5hYmxlZCI6IGZhbHNlfQ==|55d4a927b50508a2f6c08000dbf40610d68d620ee4db1883f64fc4ae83e65e16\"",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": 1735139987.442469,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://staging.talent.performyard.com",
+      "localStorage": [
+        {
+          "name": "performyardSessionExpiration",
+          "value": "2024-11-26T03:19:47.187Z"
+        }
+      ]
+    }
+  ]
+}

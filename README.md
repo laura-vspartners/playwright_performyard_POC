@@ -46,11 +46,11 @@ This Playwright project uses the **Page Object Model (POM)** to maintain a clean
 ```plaintext
 playwright-performyard_POC/
 ├── pages/                     # Page Object Model files
-│   ├── loginPage.ts           # Login page selectors and actions
 │   ├── createGoalPage.ts      # Create Goal form selectors and actions
 ├── tests/                     # Test cases
 │   ├── createGoal.spec.ts     # Tests for Create Goal feature
 ├── .env                       # Environment variables (e.g., credentials, base URL)
+├── global-setup.ts            # Setup file for login and session storage
 ├── playwright.config.ts       # Playwright configuration file
 ├── package.json               # Node.js project metadata and scripts
 ├── tsconfig.json              # TypeScript configuration (if using TypeScript)
@@ -81,11 +81,11 @@ npm install
 ```
 
 ### **4. Configure Environment Variables**
-Create a `.env` file in the project root and add the following:
+Modify the `.env` file in the project root and add your password and username:
 ```env
 BASE_URL=https://staging.talent.performyard.com/
-USERNAME=laura.andreescu@vspartners.com
-PASSWORD=Sergiu2023!!
+USERNAME=''
+PASSWORD=''
 ```
 
 ### **5. Playwright Browsers**
@@ -99,15 +99,9 @@ npx playwright install
 ## **Running Tests**
 
 ### **1. Run All Tests**
-To execute all tests in headless mode:
+To execute all tests using the login setup:
 ```bash
-npm test
-```
-
-### **2. Run Tests in Headed Mode**
-To run tests with a visible browser:
-```bash
-npm run test:headed
+npx playwright test --config=playwright.config.ts
 ```
 
 ### **3. Generate Reports**
