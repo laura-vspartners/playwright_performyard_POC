@@ -42,8 +42,8 @@ export class GoalPage {
   }
 
   // Fills out the goal creation form
-  async fillGoalForm(goalName: string, target: string, description: string, goalWeight: string, startDate: string = getTodayDate(), 
-  dueDate: string = getOneYearFromTodayDate()) {
+  async fillGoalForm(goalName: string, target: string, description: string, goalWeight: string, startDate: string = getTodayDate(),
+    dueDate: string = getOneYearFromTodayDate(), advanced = false) {
     await this.createGoalButton.click();
     await this.goalNameInput.click();
     await this.goalNameInput.fill(goalName);
@@ -57,12 +57,10 @@ export class GoalPage {
     await this.goalDescriptionInput.fill(description);
     await this.goalWeightInput.click();
     await this.goalWeightInput.fill(goalWeight);
-  }
-  getTodayDate(): string {
-    throw new Error('Method not implemented.');
-  }
-  getOneYearFromTodayDate(): string {
-    throw new Error('Method not implemented.');
+
+
+
+    if (advanced) { }
   }
 
   // Selects goal category
@@ -89,9 +87,17 @@ export class GoalPage {
   }
 
   // Verifies if an error message is displayed
-  async verifyMessageErrorIsDisplayed(error:string) {
-    const errorLocator = this.page.locator('text=' + error);
-    await expect(errorLocator).toBeVisible();
+  async verifyTargetDefaultValue() {
+    await this.createGoalButton.click();
+    const targetValue = await this.targetInput.inputValue();
+    if (targetValue !== '100') {
+      throw new Error(`Expected Target field default value to be '100', but got '${targetValue}'`);
+    }
+  }
+  
+  async verifyMessageErrorIsDisplayed(expectedError: string) {
+    const errorLocator = this.page.locator('[role="alert"]');
+    await expect(errorLocator).toHaveText(expectedError);
   }
 
 }
