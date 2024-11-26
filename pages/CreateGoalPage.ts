@@ -1,8 +1,7 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 import { getTodayDate, getOneYearFromTodayDate } from '../utils/dateHelpers';
-import { title } from 'process';
 
-export class GoalPage {
+export class CreateGoalPage {
   readonly page: Page;
   readonly goalsNav: Locator
   readonly createGoalButton: Locator;

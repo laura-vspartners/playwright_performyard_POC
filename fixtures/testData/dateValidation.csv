@@ -1,0 +1,5 @@
+startDate,dueDate,description,expectedError
+11/25/2024,11/24/2024,Due Date before Start Date,The start date must be before the due date
+11/25/2024,11/25/2024,Due Date equals Start Date,The start date must be before the due date
+,11/26/2024,Empty Start Date,Start Date must have a value
+,,,Empty Start and Due Date,Start Date must have a value

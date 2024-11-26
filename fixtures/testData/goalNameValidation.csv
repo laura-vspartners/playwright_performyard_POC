@@ -1,0 +1,7 @@
+goalName,description
+"",Empty goal name
+a,Single character
+ab,Two characters
+abc,Three characters
+#$%,Three special characters
+12$,Special characters and numbers
