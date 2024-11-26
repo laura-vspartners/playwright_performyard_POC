@@ -19,7 +19,7 @@ async function globalSetup(config: FullConfig) {
   // Perform login
   console.log('Filling in login credentials...');
   await page.fill('input[data-testid="emailInput"]', process.env.USERNAME || 'laura.andreescu@vspartners.us');
-  await page.fill('input[data-testid="passwordInput"]', process.env.PASSWORD || 'Sergiu2023!!');
+  await page.fill('input[data-testid="passwordInput"]', process.env.PASSWORD || '');
   console.log('Clicking sign-in button...');
   await page.click('button[data-testid="signInButton"]');
 
