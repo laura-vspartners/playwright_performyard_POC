@@ -7,7 +7,7 @@ dotenv.config();
 async function globalSetup(config: FullConfig) {
   const { baseURL } = config.projects[0].use; // Use the baseURL from config
   const browser = await chromium.launch({
-    headless: false, // Run browser in visible mode
+    headless: true, // Run browser in visible mode
     slowMo: 100, // Slow down actions for better visibility (optional)
   });
   const page = await browser.newPage();

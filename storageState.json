@@ -61,11 +61,31 @@
       "sameSite": "Lax"
     },
     {
-      "name": "_xsrf",
-      "value": "2|bc0a90d2|c3473ce55c5a4a1da56a27619e4b7d37|1732607171",
+      "name": "auth",
+      "value": "2|1:0|10:1732619921|4:auth|272:eyJfaWQiOiB7IiRvaWQiOiAiNjc0MGY0NjU2YjlhODE3MDBiMWU1ODczIn0sICJleHBpcmVzIjogMTczMjY2MzEyMS41MzIzMjEsICJzZXNzaW9uX2lkIjogIjY3NDVhZTkxYTE4NWZkMmZlOTA0MzIxMyIsICJtZmFfbG9naW5fcGFzc2VkIjogZmFsc2UsICJlbWFpbF9wYXNzd29yZF9hdXRoZW50aWNhdGVkIjogdHJ1ZSwgIm1mYV9lbmFibGVkIjogZmFsc2V9|d082c7204aa1fd2d12f2edaad9b7ea1486544a17dae8678e21d10f5261cd5765",
       "domain": "staging.talent.performyard.com",
       "path": "/",
-      "expires": 1735199171.588541,
+      "expires": 1735211921.584446,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "previous_session_id",
+      "value": "2|1:0|10:1732619921|19:previous_session_id|32:Njc0NWFlOTFhMTg1ZmQyZmU5MDQzMjEz|8dd5285c20c04e01af8401b65794e984cfd83f7edc7c6b03f35cbf233e8cd8bf",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": 1764155921.584526,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_xsrf",
+      "value": "2|1e359ffd|281235825b8618887665633c06fd9d01|1732619921",
+      "domain": "staging.talent.performyard.com",
+      "path": "/",
+      "expires": 1735211921.58455,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -79,26 +99,6 @@
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
-    },
-    {
-      "name": "previous_session_id",
-      "value": "2|1:0|10:1732607172|19:previous_session_id|32:Njc0NTdjYzNhMTg1ZmQyZmU5MDNkYzc3|5b592704aa33d5b663228cda643af1d75a75c88975f7459aa8547b71c3d58ea4",
-      "domain": "staging.talent.performyard.com",
-      "path": "/",
-      "expires": 1764143172.50307,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "auth",
-      "value": "\"2|1:0|10:1732607172|4:auth|276:eyJfaWQiOiB7IiRvaWQiOiAiNjc0MGY0NjU2YjlhODE3MDBiMWU1ODczIn0sICJleHBpcmVzIjogMTczMjY1MDM3Mi41MDE4NTU5LCAic2Vzc2lvbl9pZCI6ICI2NzQ1N2NjM2ExODVmZDJmZTkwM2RjNzciLCAibWZhX2xvZ2luX3Bhc3NlZCI6IGZhbHNlLCAiZW1haWxfcGFzc3dvcmRfYXV0aGVudGljYXRlZCI6IHRydWUsICJtZmFfZW5hYmxlZCI6IGZhbHNlfQ==|8eb633618979e26788fd64ee60cce6f76aeb4d404a835150f0137495d2f3e6e7\"",
-      "domain": "staging.talent.performyard.com",
-      "path": "/",
-      "expires": 1735199172.503038,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
     }
   ],
   "origins": [
@@ -107,7 +107,7 @@
       "localStorage": [
         {
           "name": "performyardSessionExpiration",
-          "value": "2024-11-26T19:46:12.136Z"
+          "value": "2024-11-26T23:18:42.107Z"
         }
       ]
     }

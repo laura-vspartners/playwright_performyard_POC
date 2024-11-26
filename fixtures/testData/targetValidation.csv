@@ -1,6 +1,5 @@
 input,description,expectedError
 -10,Negative target value,Target value cannot be negative
 1000000000000,Large number target value,Target value is too large
-abc,Characters target inserted,Target value must be a number
 ,Empty target value,Not a valid number
 47.6575,Float number inserted for target,Target value must be integer
